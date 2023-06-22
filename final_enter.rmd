@@ -1,10 +1,11 @@
+
 ---
 title: "엔터테인먼트 시장분석"
 author: "kimsubin"
 date: "2023-06-20"
 output:
   html_document:
-    toc: true
+    toc: yes
 ---
 
 
@@ -43,7 +44,7 @@ enter <- read_csv("enter_dt/enter.csv")
 - 보통 유보율이 1000% 이상인 기업이 초보자들이 투자하기에 적합
 
 
-```{r start, include = FALSE}
+```{r start, echo = FALSE}
 ####유보율
 enter$유보율<- gsub(",","",enter$유보율)
 enter$유보율<- as.numeric(enter$유보율)
